@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		BD391700243B990000972DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3916FF243B990000972DBD /* AppDelegate.swift */; };
 		BD391702243B990000972DBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD391701243B990000972DBD /* ViewController.swift */; };
-		BD391704243B990000972DBD /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = BD391703243B990000972DBD /* Experience.rcproject */; };
 		BD391707243B990000972DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD391705243B990000972DBD /* Main.storyboard */; };
 		BD391709243B990200972DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD391708243B990200972DBD /* Assets.xcassets */; };
 		BD39170C243B990200972DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39170A243B990200972DBD /* LaunchScreen.storyboard */; };
+		BD39173A243B9E9C00972DBD /* memory_card_4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391732243B9E9C00972DBD /* memory_card_4.usdz */; };
+		BD39173B243B9E9C00972DBD /* memory_card_7.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391733243B9E9C00972DBD /* memory_card_7.usdz */; };
+		BD39173C243B9E9C00972DBD /* memory_card_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391734243B9E9C00972DBD /* memory_card_3.usdz */; };
+		BD39173D243B9E9C00972DBD /* memory_card_5.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391735243B9E9C00972DBD /* memory_card_5.usdz */; };
+		BD39173E243B9E9C00972DBD /* memory_card_8.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391736243B9E9C00972DBD /* memory_card_8.usdz */; };
+		BD39173F243B9E9C00972DBD /* memory_card_2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391737243B9E9C00972DBD /* memory_card_2.usdz */; };
+		BD391740243B9E9C00972DBD /* memory_card_6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391738243B9E9C00972DBD /* memory_card_6.usdz */; };
+		BD391741243B9E9C00972DBD /* memory_card_1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BD391739243B9E9C00972DBD /* memory_card_1.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD3916FC243B990000972DBD /* ar-memory-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-memory-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3916FF243B990000972DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD391701243B990000972DBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD391703243B990000972DBD /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		BD391706243B990000972DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD391708243B990200972DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD39170B243B990200972DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD39170D243B990200972DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD391732243B9E9C00972DBD /* memory_card_4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_4.usdz; path = "ar-models/memory_card_4.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391733243B9E9C00972DBD /* memory_card_7.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_7.usdz; path = "ar-models/memory_card_7.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391734243B9E9C00972DBD /* memory_card_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_3.usdz; path = "ar-models/memory_card_3.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391735243B9E9C00972DBD /* memory_card_5.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_5.usdz; path = "ar-models/memory_card_5.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391736243B9E9C00972DBD /* memory_card_8.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_8.usdz; path = "ar-models/memory_card_8.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391737243B9E9C00972DBD /* memory_card_2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_2.usdz; path = "ar-models/memory_card_2.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391738243B9E9C00972DBD /* memory_card_6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_6.usdz; path = "ar-models/memory_card_6.usdz"; sourceTree = SOURCE_ROOT; };
+		BD391739243B9E9C00972DBD /* memory_card_1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = memory_card_1.usdz; path = "ar-models/memory_card_1.usdz"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,28 @@
 			children = (
 				BD3916FF243B990000972DBD /* AppDelegate.swift */,
 				BD391701243B990000972DBD /* ViewController.swift */,
-				BD391703243B990000972DBD /* Experience.rcproject */,
 				BD391705243B990000972DBD /* Main.storyboard */,
 				BD391708243B990200972DBD /* Assets.xcassets */,
+				BD391731243B9CCA00972DBD /* ar-models */,
 				BD39170A243B990200972DBD /* LaunchScreen.storyboard */,
 				BD39170D243B990200972DBD /* Info.plist */,
 			);
 			path = "ar-memory-game";
+			sourceTree = "<group>";
+		};
+		BD391731243B9CCA00972DBD /* ar-models */ = {
+			isa = PBXGroup;
+			children = (
+				BD391739243B9E9C00972DBD /* memory_card_1.usdz */,
+				BD391737243B9E9C00972DBD /* memory_card_2.usdz */,
+				BD391734243B9E9C00972DBD /* memory_card_3.usdz */,
+				BD391732243B9E9C00972DBD /* memory_card_4.usdz */,
+				BD391735243B9E9C00972DBD /* memory_card_5.usdz */,
+				BD391738243B9E9C00972DBD /* memory_card_6.usdz */,
+				BD391733243B9E9C00972DBD /* memory_card_7.usdz */,
+				BD391736243B9E9C00972DBD /* memory_card_8.usdz */,
+			);
+			path = "ar-models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,15 @@
 			files = (
 				BD39170C243B990200972DBD /* LaunchScreen.storyboard in Resources */,
 				BD391709243B990200972DBD /* Assets.xcassets in Resources */,
+				BD39173D243B9E9C00972DBD /* memory_card_5.usdz in Resources */,
+				BD39173B243B9E9C00972DBD /* memory_card_7.usdz in Resources */,
 				BD391707243B990000972DBD /* Main.storyboard in Resources */,
+				BD39173C243B9E9C00972DBD /* memory_card_3.usdz in Resources */,
+				BD391741243B9E9C00972DBD /* memory_card_1.usdz in Resources */,
+				BD39173F243B9E9C00972DBD /* memory_card_2.usdz in Resources */,
+				BD391740243B9E9C00972DBD /* memory_card_6.usdz in Resources */,
+				BD39173A243B9E9C00972DBD /* memory_card_4.usdz in Resources */,
+				BD39173E243B9E9C00972DBD /* memory_card_8.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +177,6 @@
 			files = (
 				BD391702243B990000972DBD /* ViewController.swift in Sources */,
 				BD391700243B990000972DBD /* AppDelegate.swift in Sources */,
-				BD391704243B990000972DBD /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
