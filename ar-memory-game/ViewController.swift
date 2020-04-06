@@ -67,15 +67,15 @@ class ViewController: UIViewController {
             card.setScale(SIMD3(repeating: Float(0.0015)), relativeTo: anchor)
             
             
-            // Todo: Setup flip animation 12:51
-            
             // Setup animation
             var flipDownTransform = card.transform
             flipDownTransform.rotation = simd_quatf(angle: .pi, axis: [1,0,0])
             
             let flipDownController = card.move(to: flipDownTransform, relativeTo: card.parent, duration: 0.25, timingFunction: .easeOut)
             
-//           flipDownController.
+            
+            // Todo: Setup flip animation 12:51
+            
             
             anchor.addChild(card)
             
