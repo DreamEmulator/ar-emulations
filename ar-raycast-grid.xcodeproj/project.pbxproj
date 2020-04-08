@@ -54,7 +54,7 @@
 		BD3916F3243B990000972DBD = {
 			isa = PBXGroup;
 			children = (
-				BD3916FE243B990000972DBD /* ar-memory-game */,
+				BD3916FE243B990000972DBD /* ar-raycast-grid */,
 				BD3916FD243B990000972DBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,7 +67,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD3916FE243B990000972DBD /* ar-memory-game */ = {
+		BD3916FE243B990000972DBD /* ar-raycast-grid */ = {
 			isa = PBXGroup;
 			children = (
 				BD3916FF243B990000972DBD /* AppDelegate.swift */,
@@ -78,7 +78,7 @@
 				BD39170A243B990200972DBD /* LaunchScreen.storyboard */,
 				BD39170D243B990200972DBD /* Info.plist */,
 			);
-			path = "ar-memory-game";
+			path = "ar-raycast-grid";
 			sourceTree = "<group>";
 		};
 		BD391731243B9CCA00972DBD /* ar-models */ = {
