@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD3916FC243B990000972DBD /* ar-memory-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-memory-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3916FC243B990000972DBD /* ar-raycast-grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-raycast-grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3916FF243B990000972DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD391701243B990000972DBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD391706243B990000972DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		BD3916FD243B990000972DBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD3916FC243B990000972DBD /* ar-memory-game.app */,
+				BD3916FC243B990000972DBD /* ar-raycast-grid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD3916FB243B990000972DBD /* ar-memory-game */ = {
+		BD3916FB243B990000972DBD /* ar-raycast-grid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD391710243B990200972DBD /* Build configuration list for PBXNativeTarget "ar-memory-game" */;
+			buildConfigurationList = BD391710243B990200972DBD /* Build configuration list for PBXNativeTarget "ar-raycast-grid" */;
 			buildPhases = (
 				BD3916F8243B990000972DBD /* Sources */,
 				BD3916F9243B990000972DBD /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = "ar-memory-game";
+			name = "ar-raycast-grid";
 			productName = "ar-memory-game";
-			productReference = BD3916FC243B990000972DBD /* ar-memory-game.app */;
+			productReference = BD3916FC243B990000972DBD /* ar-raycast-grid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD3916F7243B990000972DBD /* Build configuration list for PBXProject "ar-memory-game" */;
+			buildConfigurationList = BD3916F7243B990000972DBD /* Build configuration list for PBXProject "ar-raycast-grid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD3916FB243B990000972DBD /* ar-memory-game */,
+				BD3916FB243B990000972DBD /* ar-raycast-grid */,
 			);
 		};
 /* End PBXProject section */
@@ -355,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD3916F7243B990000972DBD /* Build configuration list for PBXProject "ar-memory-game" */ = {
+		BD3916F7243B990000972DBD /* Build configuration list for PBXProject "ar-raycast-grid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD39170E243B990200972DBD /* Debug */,
@@ -364,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD391710243B990200972DBD /* Build configuration list for PBXNativeTarget "ar-memory-game" */ = {
+		BD391710243B990200972DBD /* Build configuration list for PBXNativeTarget "ar-raycast-grid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD391711243B990200972DBD /* Debug */,
