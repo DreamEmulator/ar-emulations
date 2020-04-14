@@ -5,9 +5,29 @@
 //  Created by Sebastiaan Hols on 06/04/2020.
 //  Copyright © 2020 Sebastiaan Hols. All rights reserved.
 //
+// https://www.youtube.com/watch?v=Qtm75FuCrF0
 
 import UIKit
 import RealityKit
+
+// MARK: Extracting Custom Entity
+
+struct CardComponent : Component, Codable {
+    var revealed = false
+    var kind = ""
+}
+
+class CardEntity : Entity, HasModel, HasCollision {
+    public var card: CardComponent {
+        get {return components[CardComponent.self] ?? CardComponent()}
+        set { components[CardComponent.self] = newValue}
+    }
+}
+
+// MARK: Working code
+
+let big = SIMD3(repeating: Float(0.015))
+let small = SIMD3(repeating: Float(0.003))
 
 class ViewController: UIViewController {
     
@@ -17,22 +37,31 @@ class ViewController: UIViewController {
         let tapLocation = sender.location(in: arView)
         // Get the entity at the location we've tapped, if one exists
         if let card = arView.entity(at: tapLocation) {
-            // For testing purposes, print the name of the tapped entity
+            
+            // Setup animation
+            var flipDownTransform = card.transform
+            
+            flipDownTransform.scale = card.transform.scale == big ? small : big
+            
+            let flipDownController = card.move(to: flipDownTransform, relativeTo: card.parent, duration: 0.25, timingFunction: .easeOut)
+            
+            flipDownController.resume()
+            
             print("Card hit! \(card.name)")
         }
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Create an anchor plane for the game
-        let anchor = AnchorEntity(plane: .horizontal, minimumBounds: [0.2, 0.2])
-        arView.scene.addAnchor(anchor)
-        
         // Setup tap recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action:#selector(onTap))
         arView.addGestureRecognizer(tapGesture)
+        
+        // Create an anchor plane for the game
+        let anchor = AnchorEntity(plane: .horizontal, minimumBounds: [0.2, 0.2])
+        arView.scene.addAnchor(anchor)
         
         // Create card templates
         var cardTemplates: [Entity] = []
@@ -40,6 +69,7 @@ class ViewController: UIViewController {
         for index in 1...8 {
             let assetName = "memory_card_\(index)"
             let cardTemplate = try! Entity.loadModel(named: assetName)
+            arView.installGestures([.rotation, .translation], for: cardTemplate)
             cardTemplate.generateCollisionShapes(recursive: true)
             cardTemplate.name = assetName
             cardTemplates.append(cardTemplate)
@@ -49,9 +79,11 @@ class ViewController: UIViewController {
         var cards: [Entity] = []
         
         for cardTemplate in cardTemplates {
-            for _ in 1...2 {
-                cards.append(cardTemplate.clone(recursive: true))
-            }
+//            Uncomment for duplicates
+//            for _ in 1...2 {
+//                cards.append(cardTemplate.clone(recursive: true))
+                cards.append(cardTemplate)
+//            }
         }
         
         cards.shuffle()
@@ -64,18 +96,7 @@ class ViewController: UIViewController {
             let z = Float(index / 4) - 1.5
             
             card.position = [x * 0.1, 0, z * 0.1]
-            card.setScale(SIMD3(repeating: Float(0.0015)), relativeTo: anchor)
-            
-            
-            // Setup animation
-            var flipDownTransform = card.transform
-            flipDownTransform.rotation = simd_quatf(angle: .pi, axis: [1,0,0])
-            
-            let flipDownController = card.move(to: flipDownTransform, relativeTo: card.parent, duration: 0.25, timingFunction: .easeOut)
-            
-            
-            // Todo: Setup flip animation 12:51
-            
+            card.setScale(small, relativeTo: anchor)
             
             anchor.addChild(card)
             
